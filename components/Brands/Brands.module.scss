@@ -1,0 +1,40 @@
+.wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 70px;
+}
+.brand {
+  width: 33.3%;
+  height: 118px;
+  border: 1px solid #E8E8E8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  img {
+    width: 100%;
+  }
+}
+.titleBrands{
+  text-transform: uppercase;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 17px;
+  letter-spacing: 0.08em;
+  text-align: center;
+  color: #717171;
+}
+
+@media screen and (max-width: 768px) {
+  .brand {
+    width: 50%;
+  }
+}
+@media screen and (max-width: 440px) {
+  .brand {
+    width: 50%;
+    height: 80px;
+  }
+}

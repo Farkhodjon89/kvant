@@ -1,0 +1,45 @@
+.title {
+  font-weight: 800;
+  font-size: 14px;
+  text-transform: uppercase;
+  color: #717171;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #e8e8e8;
+}
+.action {
+  font-weight: 500;
+  font-size: 15px;
+  padding: 15px;
+  height: 260px;
+  overflow-y: auto;
+  div {
+    display: flex;
+    align-items: center;
+    height: 40px;
+    img {
+      margin-right: 10px;
+    }
+    &.active {
+      color: #ff5e1a;
+    }
+    &:hover {
+      color: #ff5e1a;
+      border: 1px solid #ff5e1a;
+      margin: 0 -15px;
+      padding: 0 15px;
+    }
+  }
+  &::-webkit-scrollbar-track {
+    background: #e8e8e8;
+    border-radius: 10px;
+  }
+  &::-webkit-scrollbar {
+    -webkit-appearance: none;
+    width: 5px;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: #ff5e1a;
+    border-radius: 10px;
+  }
+}

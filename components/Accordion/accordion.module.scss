@@ -1,0 +1,29 @@
+.name {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 40px;
+  cursor: pointer;
+  img {
+    transform: rotate(180deg);
+  }
+  &.active {
+    color: #0F4C82;
+  }
+  &:hover {
+    color: #0F4C82;
+    border: 1px solid #0F4C82;
+    margin: 0 -15px;
+    padding: 0 15px;
+  }
+}
+.link {
+  display: flex;
+  align-items: center;
+  height: 40px;
+  padding: 0 10px;
+  &:hover {
+    color: #0F4C82;
+    border: 1px solid #0F4C82;
+  }
+}
