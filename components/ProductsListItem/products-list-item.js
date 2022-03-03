@@ -28,13 +28,9 @@ const ProductsListItem = ({product, catalog, slider, wishlistItems}) => {
             /> */}
 
           <div className={s.details}>
-            {!catalog ? (
-                <>
-                  <div>{product.name}</div>
-                  <div dangerouslySetInnerHTML={{__html: product.description}}/>
-                </>
-            ) : <div className={s.sku}> SKU: {product.sku}</div>
-            }
+            <div>{product.name}</div>
+            {/*<div dangerouslySetInnerHTML={{__html: product.description}}/>*/}
+            <div className={s.sku}> SKU: {product.sku}</div>
             <div>
               {product.onSale ? (
                   <>
